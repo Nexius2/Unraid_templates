@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Plex_User_Manager</Name>
+  <Repository>nexius2/plex_user_manager</Repository>
+  <Registry>https://hub.docker.com/r/nexius2/plex_user_manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Tool to manage plex users because we can't make the difference between all of them now plex has decided to rename them. Also adding access expiration to stop user access when date passed. I'd be glad to have some help with python and docker(GitHub).</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:1080]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1666271866</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/Plex_User_Manager</Config>
+  <Config Name="WebUI port" Target="1080" Default="1080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1080</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
