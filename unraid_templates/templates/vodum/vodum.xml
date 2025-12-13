@@ -10,6 +10,12 @@
 
   <Support>https://github.com/Nexius2/VODUM/issues</Support>
   <Project>https://github.com/Nexius2/VODUM</Project>
+  <Category>MediaApp:Other</Category>
+  <Description>
+VODUM allows you to manage users and subscriptions for media servers (Plex & Jellyfin).
+</Description>
+
+
 
   <Overview>
     VODUM – VOD user subscription manager.
