@@ -7,17 +7,13 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <ReadMe/>
   <Category>MediaApp: Tools</Category>
-  <WebUI>http://[IP]:[PORT:8097]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Nexius2/VODUM/main/static/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1768377799</DateInstalled>
-  <DonateText>Help support my work by buying me a coffee</DonateText>
-  <DonateLink>https://buymeacoffee.com/vodum</DonateLink>
   <Support>https://forums.unraid.net/topic/196501-support-nexius2-vodum/</Support>
   <Project>https://github.com/Nexius2/VODUM</Project>
   <Overview>VODUM is a self-hosted subscription management tool for Plex and Jellyfin, designed to centrally manage users, subscriptions, and media library access.</Overview>
@@ -30,5 +26,4 @@
   <Config Name="Logs" Target="/logs" Default="/mnt/user/appdata/vodum/logs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vodum/logs</Config>
   <Config Name="Backups" Target="/backups" Default="/mnt/user/appdata/vodum/backups" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vodum/backups</Config>
   <Config Name="SQLite Database Path" Target="DATABASE_PATH" Default="/appdata/database.db" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/appdata/database.db</Config>
-  <TailscaleStateDir/>
 </Container>
