@@ -1,41 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Container version="2">
   <Name>autobrr</Name>
   <Repository>ghcr.io/autobrr/autobrr:latest</Repository>
   <Registry>https://ghcr.io</Registry>
   <Network>bridge</Network>
-  <Privileged>false</Privileged>
+  <MyIP></MyIP>
   <Shell>bash</Shell>
-  <WebUI>http://[IP]:[PORT:7474]/</WebUI>
+  <Privileged>false</Privileged>
 
-  <Overview>
-autobrr is an automation tool for torrent trackers (IRC announces) that can forward matched releases to download clients (qBittorrent/Transmission/Deluge) and more.
-  </Overview>
-
-  <Category>Downloaders:</Category>
-
-  <Icon>https://raw.githubusercontent.com/autobrr/autobrr/master/.github/logo.png</Icon>
-  <ExtraParams></ExtraParams>
-
-  <!-- CONFIG -->
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/autobrr" Mode="rw" Description="autobrr config folder (appdata)" Type="Path" Display="always" Required="true" Mask="false" />
-
-  <!-- PORTS -->
-  <Config Name="WebUI Port" Target="7474" Default="7474" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false" />
-
-  <!-- ENV -->
-  <Config Name="TZ" Target="TZ" Default="Europe/Paris" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID (Unraid: nobody=99)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID (Unraid: users=100)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Umask" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-
-  <!-- NOTES -->
   <Support>https://github.com/autobrr/autobrr</Support>
   <Project>https://autobrr.com</Project>
 
-  <!-- OPTIONAL: You can set 'ExtraParams' to run behind a VPN container, example:
-       --net=container:gluetun
-       And in Unraid set Network Type to 'None'. (Advanced usage)
-  -->
+  <Overview>Unraid Docker template for autobrr (template only). autobrr software belongs to the original autobrr project.</Overview>
+  <Category>Downloaders:Other</Category>
 
+  <WebUI>http://[IP]:[PORT:7474]/</WebUI>
+  <Icon>https://github.com/autobrr/autobrr/raw/develop/.github/images/logo.png</Icon>
+
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <TemplateURL></TemplateURL>
+
+  <!-- Path mappings -->
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/autobrr" Mode="rw" Description="autobrr appdata folder" Type="Path" Display="always" Required="true" Mask="false"></Config>
+
+  <!-- Port mappings -->
+  <Config Name="WebUI Port" Target="7474" Default="7474" Mode="tcp" Description="autobrr WebUI" Type="Port" Display="always" Required="true" Mask="false"></Config>
+
+  <!-- Environment variables -->
+  <Config Name="TZ" Target="TZ" Default="Europe/Paris" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID (Unraid: nobody=99)" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID (Unraid: users=100)" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Umask" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
 </Container>
