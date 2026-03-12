@@ -12,7 +12,7 @@
   <WebUI>http://[IP]:[PORT:8097]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Nexius2/VODUM/main/static/icon.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1768377799</DateInstalled>
