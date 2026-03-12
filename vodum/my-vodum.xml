@@ -24,8 +24,8 @@
   <Requires/>
   <Config Name="Appdata" Target="/appdata" Default="/mnt/user/appdata/vodum" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vodum</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Europe/Paris</Config>
-  <Config Name="Host Key 2" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="Host Key 3" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="User ID (UID)" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Group ID (GID)" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="WebUI Port" Target="5000" Default="8097" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8097</Config>
   <Config Name="Logs" Target="/logs" Default="/mnt/user/appdata/vodum/logs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vodum/logs</Config>
   <Config Name="Backups" Target="/backups" Default="/mnt/user/appdata/vodum/backups" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vodum/backups</Config>
