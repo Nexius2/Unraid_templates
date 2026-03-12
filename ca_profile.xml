@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Name>Nexius2</Name>
+  <ForumName>Nexius2</ForumName>
+  <ForumLink>https://forums.unraid.net/topic/196501-support-nexius2-vodum/</ForumLink>
+
+  <Github>https://github.com/Nexius2</Github>
+
+  <DonationText>Support VODUM development</DonationText>
+  <DonationLink>https://buymeacoffee.com/vodum</DonationLink>
+</Maintainer>
