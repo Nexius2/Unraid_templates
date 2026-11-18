@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Maintainer>
-  <Name>Nexius2</Name>
-  <ForumName>Nexius2</ForumName>
-  <ForumLink>https://forums.unraid.net/topic/196501-support-nexius2-vodum/</ForumLink>
 
-  <Github>https://github.com/Nexius2</Github>
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityApplications>
+    <Profile>
+        Applications maintained by Nexius2.
 
-  <DonationText>Support VODUM development</DonationText>
-  <DonationLink>https://buymeacoffee.com/vodum</DonationLink>
-</Maintainer>
+        VODUM is a centralized management platform for Plex and Jellyfin administrators.
+
+        It provides user and subscription management, server monitoring, automated policies, communications, and media library management.
+
+        VODUM supports both single-server installations and multi-server environments.
+
+        Source code: https://github.com/Nexius2/VODUM
+    </Profile>
+    <WebPage>https://github.com/Nexius2/VODUM</WebPage>
+    <Forum>https://forums.unraid.net/topic/196501-support-nexius2-vodum/</Forum>
+    <DonateLink>https://buymeacoffee.com/vodum</DonateLink>
+    <DonateText>Support VODUM development</DonateText>
+</CommunityApplications>
