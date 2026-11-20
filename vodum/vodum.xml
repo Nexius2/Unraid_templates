@@ -12,7 +12,7 @@
   <ReadMe/>
   <Overview>VODUM is a centralized management platform for Plex and Jellyfin administrators. Manage multiple servers, users, subscriptions, real-time monitoring, automated communications, media collections, and access policies from a single interface. Includes a self-service user portal, media requests, invitations, automation tools, and much more.</Overview>
   <Category>MediaApp: Tools</Category>
-  <WebUI>http://[IP]:[PORT:8097]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Nexius2/VODUM/main/static/icon.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
